@@ -46,6 +46,20 @@
 # c7 = College.create(name: "Yale University", city: "New Haven", state: "CT", size: 4562, average_cost: 25000, avg_act: 34, avg_sat: 1490, school_url: "www.yale.edu")
 # c8 = College.create(name: "University of Pennsylvania", city: "Philadelphia", state: "PA", size: 10454, average_cost: 25000, avg_act: 32, avg_sat: 1460, school_url: "www.upenn.edu")
 
+Category.create(title: "Athletics")
+Category.create(title: "Academics")
+Category.create(title: "Social Life")
+Category.create(title: "Food")
+Category.create(title: "Campus")
+Category.create(title: "Health Services")
+Category.create(title: "Dorms")
+Category.create(title: "Greek Life")
+Category.create(title: "Events")
+Category.create(title: "Location")
+Category.create(title: "Off Campus")
+Category.create(title: "Transportation")
+
+
 def allCollegeData
   data = nil
   i = 0

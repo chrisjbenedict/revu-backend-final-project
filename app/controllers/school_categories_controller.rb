@@ -1,2 +1,0 @@
-class SchoolCategoriesController < ApplicationController
-end

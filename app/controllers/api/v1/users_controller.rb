@@ -1,19 +1,35 @@
 class Api::V1::UsersController < ApplicationController
 
-  def index
-    @users = User.all
-    render json: @users
-  end
-
   def create
-    @user = User.create(user_params)
-    render json: @user, status: :ok
-  end
+		@user = User.new(
+			username: params[:username],
+			password: params[:password]
+		)
 
-  private
+		if @user.save
+			token = encode_token(@user.id)
 
-  def user_params
-    params.require(:user).permit(:first_name, :last_name, :username)
-  end
+			render json: {user: @user, token: token}
+		else
+			render json: {errors: @user.errors.full_messages}
+		end
+	end
+
+	def index
+		render json: User.all
+	end
+
+	def show
+		@user = User.find(params[:id])
+		if @user
+			if curr_user.id == @user.id
+				render json: @user
+			else
+				render json: {errors: "Page unavailable."}
+			end
+		else
+			render json: {errors: "User not found."}
+		end
+	end
 
 end

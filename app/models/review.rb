@@ -1,5 +1,5 @@
 class Review < ApplicationRecord
-  belongs_to :school
+  belongs_to :college
   belongs_to :user
   belongs_to :category
 

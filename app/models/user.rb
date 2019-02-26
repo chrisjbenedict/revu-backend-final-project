@@ -1,13 +1,11 @@
 class User < ApplicationRecord
-  has_many :reviews, dependent: :destroy
-  has_many :schools, through: :reviews
+  has_secure_password
 
-  validates :first_name, presence: true
-  validates :last_name, presence: true
+  has_many :reviews, dependent: :destroy
+  has_many :colleges, through: :reviews
+
   validates :username, uniqueness: true
 
-  def full_name
-    "#{first_name} #{last_name}"
-  end
+
 
 end

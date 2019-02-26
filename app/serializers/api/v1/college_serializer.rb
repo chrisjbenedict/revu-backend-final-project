@@ -1,5 +1,5 @@
 class Api::V1::CollegeSerializer < ActiveModel::Serializer
-  attributes :id, :name, :name, :city, :state, :size, :average_cost, :school_url, :completion_rate, :avg_act, :avg_sat, :admission_rate, :percent_white, :percent_black, :percent_asian, :percent_hispanic, :percent_nhpi, :percent_aian, :percent_women
+  attributes :id, :name, :city, :state, :size, :average_cost, :school_url, :completion_rate, :avg_act, :avg_sat, :admission_rate, :percent_white, :percent_black, :percent_asian, :percent_hispanic, :percent_nhpi, :percent_aian, :percent_women
 end
 
 # t.integer :id
