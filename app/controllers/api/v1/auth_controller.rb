@@ -7,7 +7,7 @@ class Api::V1::AuthController < ApplicationController
 
 			render json: {user: @user, token: token}
 		else
-			render json: {errors: "Oops. Something went wrong."}
+			render json: {errors: "Oops. Something went wrong. Make sure you entered the correct username and password!"}
 		end
 	end
 
