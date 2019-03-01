@@ -6,6 +6,7 @@ Rails.application.routes.draw do
       resources :reviews
       resources :colleges
       resources :users
+      resources :favorites
 
       post "/login", to: "auth#login"
       get "/current_user", to: "auth#get_user_from_token"

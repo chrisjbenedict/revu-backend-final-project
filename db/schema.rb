@@ -10,10 +10,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_02_20_185202) do
+ActiveRecord::Schema.define(version: 2019_03_01_154041) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "api_v1_favorites", force: :cascade do |t|
+    t.integer "user_id"
+    t.integer "college_id"
+    t.integer "ranking"
+    t.boolean "app_started"
+    t.boolean "essay"
+    t.boolean "app_submitted"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "categories", force: :cascade do |t|
     t.string "title"
@@ -40,6 +51,17 @@ ActiveRecord::Schema.define(version: 2019_02_20_185202) do
     t.float "percent_nhpi"
     t.float "percent_aian"
     t.float "percent_women"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "favorites", force: :cascade do |t|
+    t.integer "user_id"
+    t.integer "college_id"
+    t.integer "ranking"
+    t.boolean "app_started"
+    t.boolean "essay"
+    t.boolean "app_submitted"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

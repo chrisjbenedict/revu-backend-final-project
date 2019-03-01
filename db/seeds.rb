@@ -60,6 +60,7 @@ Category.create(title: "Off Campus")
 Category.create(title: "Transportation")
 
 
+
 def allCollegeData
   data = nil
   i = 0

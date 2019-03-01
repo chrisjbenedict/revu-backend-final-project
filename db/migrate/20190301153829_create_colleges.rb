@@ -20,6 +20,7 @@ class CreateColleges < ActiveRecord::Migration[5.2]
       t.float :percent_aian
       t.float :percent_women
 
+
       t.timestamps
     end
   end

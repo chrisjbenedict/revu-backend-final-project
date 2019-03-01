@@ -13,5 +13,4 @@ class Review < ApplicationRecord
       errors.add(:rating, "must be between 1 and 5")
     end
   end
-
 end
