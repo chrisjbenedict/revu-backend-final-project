@@ -95,3 +95,17 @@ def allCollegeData
 end
 
 allCollegeData
+
+
+# def hipster_ipsum
+#   ["Whatever organic 90's", "drinking", "vinegar", "helvetica", "swag", "synth", "plaid", "YOLO", "raclette", "small", "batch", "VHS","direct","trade","brooklyn", "Taiyaki plaid gastropub venmo", "Chillwave street art taiyaki", "snackwave cardigan church-key tbh offal post-ironic", "+1 bicycle rights microdosing", "Marfa knausgaard narwhal, next level lyft heirloom copper mug pabst tote bag put a bird on it umami vice cred", "Pork belly offal mixtape, edison bulb banjo brunch vegan gochujang", "leggings single-origin coffee", "Single-origin coffee semiotics food truck chia poke", "leggings beard selfies chicharrones small batch", "Crucifix mumblecore blog", "3 wolf moon listicle echo park mixtape celiac", "iPhone typewriter sartorial 8-bit farm-to-table", "Ramps twee cloud bread edison bulb tattooed", "Single-origin coffee iPhone mlkshk twee aesthetic", "mustache craft beer readymade wolf waistcoat la croix 90's taiyaki prism", "VHS synth pop-up prism craft beer yr", "seitan mustache", "8-bit 90's pour-over", "Bicycle rights ugh vegan iPhone 8-bit", "farm-to-table meditation master cleanse etsy", "Etsy shaman coloring book fashion axe", "Church-key artisan authentic lumbersexual tumblr", "Lumbersexual mumblecore fanny pack", "williamsburg hammock activated charcoal vaporware kale chips", "Kogi before they sold out authentic selvage fingerstache", "lo-fi raw denim cliche knausgaard pour-over coloring book", "Schlitz distillery twee listicle crucifix", "Fam 8-bit letterpress", "austin edison bulb roof party vaporware pitchfork post-ironic", "90's edison bulb wayfarers", "occupy four dollar toast thundercats tacos cronut trust fund jianbing direct trade small batch ennui iPhone", "Paleo master cleanse hexagon flexitarian", "subway tile offal vinyl food truck poke etsy health goth hell of pork belly gochujang narwhal", "Photo booth taxidermy mustache forage slow-carb", "Woke activated charcoal quinoa tousled asymmetrical", "cold-pressed actually ugh pickled fanny pack kitsch", "Salvia chia occupy flannel keffiyeh", "Meditation hashtag intelligentsia", "gochujang synth deep v pabst echo park", "PBR&B pork belly chicharrones 8-bit", "Cardigan af williamsburg PBR&B", "Crucifix art party beard fixie", "shoreditch bespoke pabst affogato","slow-carb chia tattooed messenger","bag mumblecore pop-up copper mug", "Vaporware sustainable cray", "enamel pin listicle cred cardigan","pour-over kale chips pok pok trust fund","ugh heirloom", "Chia succulents", "readymade", "bushwick pour-over", "semiotics coloring book", "hot chicken wayfarers intelligentsia", "slow-carb pop-up messenger bag truffaut", "Tacos fixie direct trade organic","farm-to-table ennui roof party disrupt","whatever cloud bread mustache seitan", "gluten-free", "Tumeric meggings bespoke subway tile", "kale chips sartorial pok pok wayfarers", "you probably haven't heard of them", "schlitz forage food truck chambray", "La croix art party next level", "gochujang heirloom", "flexitarian master cleanse"].sample(5).join(",") + "."
+# end
+#
+# def college_ids
+#   [1238, 721, 5609, 6743, 804]
+# end
+#
+#
+# 100.times do
+#   Review.create(user_id: 1, college_id: college_ids.sample, category_id: Category.all.sample.id, content: hipster_ipsum, rating: nil)
+# end
