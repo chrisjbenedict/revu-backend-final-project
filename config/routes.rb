@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :college_categories
   namespace :api do
     namespace :v1 do
       resources :school_categories

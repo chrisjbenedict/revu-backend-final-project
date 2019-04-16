@@ -66,7 +66,7 @@ def allCollegeData
   i = 0
   allData = Array.new
   while i <= 71
-    data = JSON.parse(RestClient.get("https://api.data.gov/ed/collegescorecard/v1/schools.json?fields=school.name,latest.student.demographics.female_share,latest.student.size,latest.student.demographics.race_ethnicity.white,latest.student.demographics.race_ethnicity.nhpi,latest.student.demographics.race_ethnicity.aian,latest.student.demographics.race_ethnicity.asian,latest.student.demographics.race_ethnicity.hispanic,latest.student.demographics.race_ethnicity.black,latest.admissions.act_scores.midpoint.cumulative,latest.admissions.sat_scores.average.overall,latest.admissions.admission_rate.overall,latest.completion.completion_rate_4yr_150nt,latest.cost.attendance.academic_year,id,school.city,school.state,school.school_url&_page=#{i}&_per_page=100&api_key=M7Oc5YHxn5DU9i0HUH8ETdfw6OWwBOnk0I8lZh7Q"))
+    data = JSON.parse(RestClient.get("https://api.data.gov/ed/collegescorecard/v1/schools.json?fields=school.name,latest.student.demographics.female_share,latest.student.size,latest.student.demographics.race_ethnicity.white,latest.student.demographics.race_ethnicity.nhpi,latest.student.demographics.race_ethnicity.aian,latest.student.demographics.race_ethnicity.asian,latest.student.demographics.race_ethnicity.hispanic,latest.student.demographics.race_ethnicity.black,latest.admissions.act_scores.midpoint.cumulative,latest.admissions.sat_scores.average.overall,latest.admissions.admission_rate.overall,latest.completion.completion_rate_4yr_150nt,latest.cost.attendance.academic_year,id,school.city,school.state,school.school_url&_page=#{i}&_per_page=100&api_key=kovSn4kRwoLzizTNjcRNyh0GRsmgjhOKvVPtcyZC"))
     allData.push(data["results"])
     i += 1
   end
