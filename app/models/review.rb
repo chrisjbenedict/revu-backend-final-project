@@ -2,7 +2,6 @@ class Review < ApplicationRecord
   belongs_to :college
   belongs_to :user
   belongs_to :category
-  has_one_attached :photo
 
   validates :content, presence: true
   validates :rating, presence: true
